@@ -2,8 +2,18 @@ import React from "react";
 import "./Header.css";
 import logo from "../../../images/logo.png";
 import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
+
+  const handleSignOut = (event) => {
+    event.preventDefault();
+    signOut(auth);
+  };
+
   return (
     <header className="">
       <div className="container">
@@ -16,10 +26,10 @@ const Header = () => {
               <img
                 style={{ width: "36px", height: "36px" }}
                 src={logo}
-                className="me-3"
+                className="me-1"
                 alt=""
               />
-              <span className="fs-3 fw-bold"></span>
+              <span className="fs-3 fw-bold">PC Hardware Man</span>
             </Link>
             <button
               className="navbar-toggler"
@@ -45,11 +55,6 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link text-dark menu-link" to="/projects">
-                    Projects
-                  </Link>
-                </li>
-                <li className="nav-item">
                   <Link className="nav-link text-dark menu-link" to="/blogs">
                     Blogs
                   </Link>
@@ -61,9 +66,18 @@ const Header = () => {
                 </li>
               </ul>
               <form className="">
-                <Link to="/login" className="btn primary-button">
-                  Login
-                </Link>
+                {user ? (
+                  <button
+                    onClick={handleSignOut}
+                    className="btn primary-button"
+                  >
+                    Sign out
+                  </button>
+                ) : (
+                  <Link to="/login" className="btn primary-button">
+                    Login
+                  </Link>
+                )}
               </form>
             </div>
           </div>

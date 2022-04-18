@@ -5,7 +5,7 @@ import bannerBG from "../../../video/banner-bg.mp4";
 const Banner = () => {
   return (
     <div className="banner">
-      <video autoPlay loop muted src={bannerBG}></video>
+      {/* <video autoPlay loop muted src={bannerBG}></video> */}
 
       <div className="container">
         <div className="row text-content">

@@ -22,8 +22,8 @@ const Footer = () => {
             </Link>
           </div>
           <div className="col">
-            <Link className="footer-link" to="/pricing">
-              Pricing
+            <Link className="footer-link" to="/projects">
+              Projects
             </Link>
           </div>
           <div className="col">
@@ -44,19 +44,29 @@ const Footer = () => {
         </div>
         <div className="icon-row d-flex mx-auto text-center">
           <div className="col">
-            <FontAwesomeIcon className="footer-icon" icon={faFacebook} />
+            <a target="_blank" href="https://www.facebook.com/">
+              <FontAwesomeIcon className="footer-icon" icon={faFacebook} />
+            </a>
           </div>
           <div className="col">
-            <FontAwesomeIcon className="footer-icon" icon={faInstagram} />
+            <a target="_blank" href="https://instagram.com/">
+              <FontAwesomeIcon className="footer-icon" icon={faInstagram} />
+            </a>
           </div>
           <div className="col">
-            <FontAwesomeIcon className="footer-icon" icon={faTwitter} />
+            <a target="_blank" href="https://twitter.com/">
+              <FontAwesomeIcon className="footer-icon" icon={faTwitter} />
+            </a>
           </div>
           <div className="col">
-            <FontAwesomeIcon className="footer-icon" icon={faGithub} />
+            <a target="_blank" href="https://github.com/">
+              <FontAwesomeIcon className="footer-icon" icon={faGithub} />
+            </a>
           </div>
           <div className="col">
-            <FontAwesomeIcon className="footer-icon" icon={faDribbble} />
+            <a target="_blank" href="https://dribbble.com/">
+              <FontAwesomeIcon className="footer-icon" icon={faDribbble} />
+            </a>
           </div>
         </div>
         <div className="row text-center">

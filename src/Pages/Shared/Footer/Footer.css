@@ -29,7 +29,7 @@ footer{
 @media only screen and (max-width: 576px) {
     .footer{
         width: 90%;
-        padding: 10px 0px;
+        padding: 20px 0px;
     }
     .footer-link{
         font-size: 13px;

@@ -12,9 +12,9 @@ import {
 const Feature = () => {
   return (
     <div className="feature">
-      <div className="container">
+      <div className="container py-4">
         <div className="row py-5">
-          <h1 className="fw-bold text-center mb-4">Why Hire Me</h1>
+          <h1 className="fw-bold text-center mb-5">Why Hire Me</h1>
           <div className="col-lg-3 col-md-6 col-sm-12 feature-item">
             <FontAwesomeIcon className="feature-icon" icon={faCalendar} />
             <h4>6 Day per Week</h4>

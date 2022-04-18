@@ -1,0 +1,27 @@
+.subscribe-heading{
+    color: #356169;
+    padding-bottom: 20px;
+}
+.subscribe{
+    padding: 50px 10px;
+}
+.half-width{
+    width: 90%;
+}
+.half-width p{
+    text-align: justify;
+    width: 95%;
+}
+
+@media only screen and (max-width: 576px) {
+    .subscribe{
+        padding: 20px 10px;
+    }
+    .half-width{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .half-width p{
+        width: 100%;
+    }
+}

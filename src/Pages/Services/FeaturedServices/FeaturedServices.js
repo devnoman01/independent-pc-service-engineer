@@ -7,7 +7,7 @@ const FeaturedServices = () => {
   const featuredServices = services.slice(0, 6);
   return (
     <div>
-      <div className="container">
+      <div className="container my-4">
         <div className="row">
           <h1 className="my-5 fw-bold text-center">My Services</h1>
           <div className="service-parent-div">

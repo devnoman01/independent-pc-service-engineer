@@ -4,62 +4,62 @@
         "name": "Motherboard Troubleshoot",
         "price": "300",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "https://img.freepik.com/free-photo/technician-repairing-computer-computer-hardware-repairing-upgrade-technology_1150-8859.jpg"
     },
     {
         "id": 2,
         "name": "HDD-SSD Data Recovery",
         "price": "100",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "img": "https://img.freepik.com/free-photo/hard-drive-disc-close-up_144627-9074.jpg"
     },
     {
         "id": 3,
         "name": "OS Install & Troubleshoot",
         "price": "150",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "img": "https://img.freepik.com/free-photo/close-up-man-writing-code-laptop_158595-5169.jpg"
     },
     {
         "id": 4,
         "name": "Old System Upgrade",
         "price": "180",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "img": "https://img.freepik.com/free-photo/technician-repairing-computer-computer-hardware-repairing-upgrade-technology_1150-8854.jpg"
     },
     {
         "id": 5,
         "name": "New System Build",
         "price": "100",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "img": "https://img.freepik.com/free-photo/computer_1205-719.jpg"
     },
     {
         "id": 6,
         "name": "Old CD-DVD Data Recovery",
         "price": "300",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "img": "https://img.freepik.com/free-psd/cd-mockup_58466-10875.jpg"
     },
     {
         "id": 7,
         "name": "Power Supply Troubleshoot",
         "price": "180",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "img": "https://www.gamingscan.com/wp-content/uploads/2019/03/picking-a-power-supply.jpg"
     },
     {
         "id": 8,
-        "name": "Liquid Cooling System Install",
+        "name": "PC Cooling System Install",
         "price": "100",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "img": "https://img.freepik.com/free-vector/cooling-system-design-concept_1284-45254.jpg"
     },
     {
         "id": 9,
         "name": "Printer & Projector Repair",
         "price": "300",
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "img": "https://img.freepik.com/free-photo/home-printer-based-toner_23-2149287461.jpg"
     }
 ]

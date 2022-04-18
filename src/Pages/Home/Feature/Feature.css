@@ -1,0 +1,12 @@
+.feature{
+    background-color: #ddeff0;
+}
+.feature-item{
+    text-align: center;
+    margin-top: 30px;
+}
+.feature-icon{
+    color: #356169;
+    font-size: 64px;
+    margin-bottom: 20px;
+}

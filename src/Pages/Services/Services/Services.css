@@ -4,3 +4,19 @@
     grid-gap: 30px;
     margin-bottom: 50px;
 }
+
+
+@media only screen and (max-width: 991px) and (min-width: 577px) {
+    .service-parent-div{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .service-parent-div{
+        padding: 0px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}

@@ -14,12 +14,12 @@ const Header = () => {
               to="/"
             >
               <img
-                style={{ width: "24px", height: "24px" }}
+                style={{ width: "36px", height: "36px" }}
                 src={logo}
-                className=""
+                className="me-3"
                 alt=""
               />
-              <span className="fs-3 fw-bold">PC Hardware Man</span>
+              <span className="fs-3 fw-bold"></span>
             </Link>
             <button
               className="navbar-toggler"
@@ -33,42 +33,30 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark me-2 menu-link"
-                    to="/home"
-                  >
+                  <Link className="nav-link text-dark menu-link" to="/home">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark me-2 menu-link"
-                    to="/projects"
-                  >
+                  <Link className="nav-link text-dark menu-link" to="/projects">
                     Projects
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark me-2 menu-link"
-                    to="/blogs"
-                  >
+                  <Link className="nav-link text-dark menu-link" to="/blogs">
                     Blogs
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark me-3 menu-link"
-                    to="/about"
-                  >
+                  <Link className="nav-link text-dark menu-link" to="/about">
                     About
                   </Link>
                 </li>
               </ul>
               <form className="">
-                <Link to="/login" className="btn header-button">
+                <Link to="/login" className="btn primary-button">
                   Login
                 </Link>
               </form>

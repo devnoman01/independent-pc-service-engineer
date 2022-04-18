@@ -2,9 +2,21 @@ header{
     background-color: #ddeff0;
 }
 .menu-link{
+    font-size: 18px;
     font-weight: 500;
 }
-.header-button{
+.primary-button{
     color: #fff;
     background-color: #356169;
+}
+.primary-button:hover{
+    background-color: #ddeff0;
+    color: #356169;
+    border: 1px solid #356169;
+}
+
+@media only screen and (min-width: 992px) {
+    .menu-link{
+        margin: auto 15px;
+    }
 }

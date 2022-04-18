@@ -2,21 +2,46 @@ footer{
     background-color: #ddeff0;
 }
 .footer{
-    width: 60%;
+    width: 50%;
+    padding: 30px 0px;
 }
 .footer-link{
     text-decoration: none;
-    color: #1F2937;
+    color: #273036;
     font-size: 16px;
     font-weight: 500;
+}
+.icon-row{
+    width: 50%;
+    margin: 40px auto;
+    gap: 20px;
+}
+.footer-icon{
+    font-size: 30px;
+    color: #273036;
+}
+.footer-text{
+    font-size: 18px;
 }
 
 
 @media only screen and (max-width: 576px) {
     .footer{
         width: 90%;
+        padding: 10px 0px;
     }
     .footer-link{
-        font-size: 14px;
+        font-size: 13px;
+    }
+    .icon-row{
+        width: 80%;
+        margin: 20px auto;
+        gap: 15px;
+    }
+    .footer-icon{
+        font-size: 24px;
+    }
+    .footer-text{
+        font-size: 12px;
     }
 }

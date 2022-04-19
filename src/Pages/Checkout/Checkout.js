@@ -17,12 +17,14 @@ const Checkout = () => {
       .then((data) => setBookedServices(data));
   }, []);
 
+  // getting booked service information
   let bookedService = {};
   bookedServices
     .filter((booked) => booked.id == serviceId)
     .map((filteredService) => (bookedService = { ...filteredService }));
   const { name, price, description, img } = bookedService;
 
+  // placeorder submit button function
   const handlePlaceOrder = (e) => {
     e.preventDefault();
     toast("Order Placed.");
@@ -36,6 +38,7 @@ const Checkout = () => {
         <div className="row my-5">
           <h1 className="text-center mb-4">Checkout Your Order</h1>
           <div className="checkout-row">
+            {/* selected service item */}
             <div className="col-md-6 col-sm-12 p-3 my-3">
               <div className="selected-service">
                 <h3 className="px-3 mb-4 text-center">
@@ -52,6 +55,7 @@ const Checkout = () => {
               </div>
             </div>
 
+            {/* checkout form */}
             <div className="col-md-6 col-sm-12 p-2 my-3">
               <div className="">
                 <h3 className="px-3 mb-4 text-center">Recipient Details</h3>

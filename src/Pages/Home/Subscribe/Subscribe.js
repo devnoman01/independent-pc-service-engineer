@@ -1,9 +1,16 @@
 import React from "react";
 import "./Subscribe.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Subscribe = () => {
   const handleSubscribe = (event) => {
     event.preventDefault();
+    if (event.target.email.value) {
+      toast("Thanks for Subscribing");
+    } else {
+      toast("Please enter email.");
+    }
   };
   return (
     <div className="container my-5">
@@ -28,6 +35,7 @@ const Subscribe = () => {
                 Enter Email
               </label>
               <input
+                name="email"
                 type="email"
                 className="form-control w-75"
                 id="exampleInputEmail1"
@@ -43,6 +51,7 @@ const Subscribe = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

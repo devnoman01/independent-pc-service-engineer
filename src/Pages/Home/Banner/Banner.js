@@ -12,13 +12,19 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      {/* <video autoPlay loop muted src={bannerBG}></video> */}
+      <video autoPlay loop muted src={bannerBG}></video>
 
       <div className="container">
         <div className="row text-content">
           <div className="my-auto banner-text text-center">
-            <h1>Problems with PC Hardware?</h1>
-            <h1>I can be your PC Hardware Expert</h1>
+            <h1>
+              Problems with{" "}
+              <span className="colorful-heading">PC Hardware?</span>
+            </h1>
+            <h1>
+              I can be your{" "}
+              <span className="colorful-heading">PC Hardware Expert</span>
+            </h1>
             <p>
               Being tired of PC hardware issues? Don't worry. I am here to find
               solution for all sort of PC hardware issues you may have. Feel

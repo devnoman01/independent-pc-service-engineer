@@ -1,33 +1,38 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
-import {
-  useSignInWithEmailAndPassword,
-  useSendPasswordResetEmail,
-} from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { sendPasswordResetEmail } from "firebase/auth";
 import auth from "../../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "../../Shared/Loading/Loading";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-  const emailRef = useRef("");
-  const passwordRef = useRef("");
+  // const emailRef = useRef("");
+  // const passwordRef = useRef("");
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/home";
   let errorElement;
 
+  const emailRef = useRef("");
+
   const handleLogin = (e) => {
     e.preventDefault();
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
     signInWithEmailAndPassword(email, password);
+    toast("Login successful");
   };
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   if (user) {
     navigate(from, { replace: true });
@@ -36,11 +41,13 @@ const Login = () => {
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
-  const resetPassword = async () => {
+  const resetPassword = (event) => {
     const email = emailRef.current.value;
+    console.log(email);
     if (email) {
-      await sendPasswordResetEmail(emailRef.current.value);
-      toast("Sent Mail");
+      sendPasswordResetEmail(auth, email).then(() =>
+        toast("Password Reset Email Sent")
+      );
     } else {
       toast("Please Enter Your Email Address");
     }
@@ -59,6 +66,7 @@ const Login = () => {
                 </label>
                 <input
                   ref={emailRef}
+                  name="email"
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
@@ -71,7 +79,7 @@ const Login = () => {
                   Password
                 </label>
                 <input
-                  ref={emailRef}
+                  name="password"
                   type="password"
                   className="form-control"
                   id="exampleInputPassword1"

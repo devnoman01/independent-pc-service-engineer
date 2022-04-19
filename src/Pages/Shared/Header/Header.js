@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { signOut } from "firebase/auth";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -12,10 +14,11 @@ const Header = () => {
   const handleSignOut = (event) => {
     event.preventDefault();
     signOut(auth);
+    toast("Signed out!");
   };
 
   return (
-    <header className="">
+    <header className="sticky-top">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light py-3">
           <div className="container-fluid">
@@ -29,7 +32,11 @@ const Header = () => {
                 className="me-1"
                 alt=""
               />
-              <span className="fs-3 fw-bold">PC Hardware Man</span>
+              <span className="fs-6 fw-bold my-0">
+                <span className="m-0">Independent PC</span>
+                <br />
+                Service Engineer
+              </span>
             </Link>
             <button
               className="navbar-toggler"
@@ -43,7 +50,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link text-dark menu-link" to="/home">
                     Home
@@ -83,6 +90,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
+      <ToastContainer />
     </header>
   );
 };

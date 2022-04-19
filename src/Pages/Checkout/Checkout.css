@@ -1,0 +1,42 @@
+.checkout-row{
+    display: flex;
+}
+.selected-service{
+    width: 80%;
+    margin: 0 auto;
+}
+.description{
+    text-align: justify;
+    margin: 20px auto;
+}
+.checkout-form{
+    padding: 24px;
+    background-color: rgba(242, 249, 249, 0.8);
+}
+
+@media only screen and (max-width: 767px) and (min-width: 577px) {
+    .checkout-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .selected-service{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .checkout-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .selected-service{
+        width: 100%;
+    }
+    .service-info{
+        text-align: center;
+    }
+    .checkout-form label{
+        text-align: center;
+    }
+}

@@ -1,5 +1,6 @@
 header{
     background-color: #ddeff0;
+    
 }
 .menu-link{
     font-size: 18px;
@@ -18,5 +19,13 @@ header{
 @media only screen and (min-width: 992px) {
     .menu-link{
         margin: auto 15px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .menu-link{
+        font-size: 14px;
+    }
+    .primary-button{
+        font-size: 14px;
     }
 }

@@ -8,6 +8,7 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 import auth from "../../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Loading from "../../Shared/Loading/Loading";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -25,8 +26,12 @@ const Register = () => {
     const password = passwordRef.current.value;
     await createUserWithEmailAndPassword(email, password);
     navigate("/home");
-    // toast("Registration complete");
+    toast("Registration complete");
   };
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
 
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;

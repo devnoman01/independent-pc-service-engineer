@@ -9,9 +9,10 @@ import Projects from "./Pages/Projects/Projects";
 import Services from "./Pages/Services/Services/Services";
 import Header from "./Pages/Shared/Header/Header";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
-import { ToastContainer, toast } from "react-toastify";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import Checkout from "./Pages/Checkout/Checkout";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (

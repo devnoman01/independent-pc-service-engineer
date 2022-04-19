@@ -6,10 +6,10 @@ const Blogs = () => {
   return (
     <div>
       <div className="container">
-        <div className="row my-5 text-center">
+        <div className="row px-3 my-5 text-center">
           <h1 className="my-5">Popular Blogs</h1>
-          <article>
-            <h3 className="my-3">Authorization VS Authentication</h3>
+          <article className="article">
+            <h3 className="">Authorization VS Authentication</h3>
             <p>
               Authorization: In authentication process, the identity of users
               are checked for providing the access to the system. While in this
@@ -25,8 +25,8 @@ const Blogs = () => {
               Authentication determines whether the person is user or not.
             </p>
           </article>
-          <article>
-            <h3 className="my-3">Why are You Using Firebase?</h3>
+          <article className="article">
+            <h3 className="">Why are You Using Firebase?</h3>
             <p>
               I'm using firebase for authentication and to host my website.
               Firebase Authentication aims to make building secure
@@ -45,8 +45,8 @@ const Blogs = () => {
               environments.
             </p>
           </article>
-          <article>
-            <h3 className="my-3">
+          <article className="article">
+            <h3 className="">
               What are the Other Services Firebase Provides than Authentication?
             </h3>
             <p>

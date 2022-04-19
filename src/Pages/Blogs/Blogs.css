@@ -1,3 +1,15 @@
-article p{
+.article{
+    background-color: #ddeff0;
+    margin: 25px auto;
+    padding: 30px;
+}
+.article h3{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.article p{
+    text-align: justify;
+}
+.article ul li{
     text-align: justify;
 }

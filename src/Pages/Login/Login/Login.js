@@ -43,7 +43,6 @@ const Login = () => {
   }
   const resetPassword = (event) => {
     const email = emailRef.current.value;
-    console.log(email);
     if (email) {
       sendPasswordResetEmail(auth, email).then(() =>
         toast("Password Reset Email Sent")

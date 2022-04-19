@@ -27,7 +27,7 @@ const Checkout = () => {
   // placeorder submit button function
   const handlePlaceOrder = (e) => {
     e.preventDefault();
-    toast("Order Placed.");
+    toast("Service Booked.");
     bookedService = {};
     navigate("/home");
   };

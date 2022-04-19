@@ -4,11 +4,11 @@
 
 <!-- live site link -->
 
-### Live site link:
+## Live site link:
 
-<!-- use this link to view live site: [Review Hub](https://review-hub-devnoman01.netlify.app/) -->
+Click this [Live link](https://pc-hardware-man-41232.web.app/)
 
-<!-- [https://review-hub-devnoman01.netlify.app/](https://review-hub-devnoman01.netlify.app/) -->
+Or this link to view live site: [Independent PC Service Engineer](https://pc-hardware-man-41232.web.app/)
 
 ---
 

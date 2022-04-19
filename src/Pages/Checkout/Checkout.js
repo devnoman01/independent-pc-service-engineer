@@ -12,7 +12,7 @@ const Checkout = () => {
   const [bookedServices, setBookedServices] = useState([]);
 
   useEffect(() => {
-    fetch("/services.json")
+    fetch("services.json")
       .then((res) => res.json())
       .then((data) => setBookedServices(data));
   }, []);

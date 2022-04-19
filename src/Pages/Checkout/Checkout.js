@@ -41,7 +41,7 @@ const Checkout = () => {
             {/* selected service item */}
             <div className="col-md-6 col-sm-12 p-3 my-3">
               <div className="selected-service">
-                <h3 className="px-3 mb-4 text-center">
+                <h3 className="px-3 mb-5 text-center">
                   Selected Service Details
                 </h3>
                 <div className="p-3">

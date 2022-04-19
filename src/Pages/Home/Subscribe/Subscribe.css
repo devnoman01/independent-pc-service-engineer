@@ -16,6 +16,7 @@
 @media only screen and (max-width: 576px) {
     .subscribe{
         padding: 20px 10px;
+        text-align: center;
     }
     .half-width{
         width: 100%;
@@ -23,5 +24,8 @@
     }
     .half-width p{
         width: 100%;
+    }
+    .half-width input{
+        margin: 0 auto;
     }
 }

@@ -11,6 +11,7 @@ const FeaturedServices = () => {
       <div id="" className="container my-4">
         <div className="row">
           <h1 className="my-5 fw-bold text-center">My Services</h1>
+          {/* loading home page featured services */}
           <div className="service-parent-div">
             {featuredServices.map((service) => (
               <Service key={service.id} service={service}></Service>

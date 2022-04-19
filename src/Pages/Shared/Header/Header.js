@@ -50,7 +50,7 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link text-dark menu-link" to="/home">
                     Home
@@ -66,7 +66,7 @@ const Header = () => {
                     Blogs
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item me-3">
                   <Link className="nav-link text-dark menu-link" to="/about">
                     About
                   </Link>

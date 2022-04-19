@@ -5,6 +5,8 @@ import "./Service.css";
 const Service = ({ service }) => {
   const { id, name, price, description, img, lists } = service;
   const navigate = useNavigate();
+
+  // dynamic route navigation
   const navigateToServiceDetail = (id) => {
     navigate(`/checkout/${id}`);
   };

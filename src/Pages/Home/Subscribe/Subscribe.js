@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Subscribe = () => {
+  // subscribe button onclick handle
   const handleSubscribe = (event) => {
     event.preventDefault();
     if (event.target.email.value) {
@@ -13,6 +14,7 @@ const Subscribe = () => {
     }
   };
   return (
+    // extra part
     <div className="container my-5">
       <div className="row subscribe">
         <h1 className="fw-bold text-center mb-5">Subscribe</h1>
@@ -27,10 +29,11 @@ const Subscribe = () => {
             </p>
           </div>
         </div>
+        {/* subscribe email input part */}
         <div className="col-md-6 col-sm-12 p-2">
           <div className="half-width">
             <h3 className="subscribe-heading">Subcribe to get offers.</h3>
-            <div className="mb-2">
+            <div className="mb-2 input-div">
               <label htmlFor="exampleInputEmail1" className="form-label">
                 Enter Email
               </label>

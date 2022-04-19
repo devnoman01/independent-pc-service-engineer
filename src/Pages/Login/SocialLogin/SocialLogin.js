@@ -13,10 +13,12 @@ const SocialLogin = () => {
   let from = location.state?.from?.pathname || "/";
   let errorElement;
 
+  // if redirected to login page then redirect back after login
   if (user) {
     navigate(from, { replace: true });
   }
 
+  // checking any error and updating if needed
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
   }
@@ -30,6 +32,7 @@ const SocialLogin = () => {
       </div>
       {errorElement}
       <div>
+        {/* google login button with function */}
         <button
           onClick={() => signInWithGoogle()}
           className="btn border border-2 w-100 d-flex align-items-center justify-content-center gap-2 mx-auto my-3 social-login-button"
